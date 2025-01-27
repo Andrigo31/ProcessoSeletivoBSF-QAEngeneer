@@ -5,9 +5,9 @@
 Exemplo Request Body 
 ```json
 { 
-  "nome": "Andrigo", 
-  "email": "andrigo@gmail.com", 
-  "password": "654321", 
+  "nome": "AndreaFA", 
+  "email": "andrea@gmail.com", 
+  "password": "123456", 
   "administrador": "true" 
 }
 ```
@@ -30,13 +30,13 @@ Exemplo Response Body:
 
 - Passo 1: Realizar uma requisição GET para buscar o usuário com o nome "AndreaFA". 
 
-Exemplo Request URL: https://serverest.dev/usuarios?nome=AndreaFA 
+-- Exemplo Request URL: https://serverest.dev/usuarios?nome=AndreaFA 
 
 - Passo 2: Validar se a resposta tem código de status HTTP 200 OK. 
 
 - Passo 3: Validar que a quantidade de usuários retornados não seja nula. 
 
-Exemplo Response Body: 
+-- Exemplo Response Body: 
 ```json
 { 
   "quantidade": 1, 
