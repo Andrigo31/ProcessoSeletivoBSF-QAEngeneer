@@ -3,6 +3,7 @@
 Objetivo: Criar um novo usuário. 
 - Passo 1: Enviar uma requisição POST para cadastrar um novo usuário com os seguintes dados no seguinte formato: 
 Exemplo Request Body 
+```json
 { 
   "nome": "Andrigo", 
   "email": "andrigo@gmail.com", 
