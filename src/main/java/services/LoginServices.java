@@ -14,7 +14,7 @@ public class LoginServices {
         this.requestSpecification = requestSpecification;
     }
 
-    public ValidatableResponse login(String email, String senha) {
+    public ValidatableResponse efetuarLogin(String email, String senha) {
 
         LoginDto loginDto = LoginDto.builder()
                 .email(email)

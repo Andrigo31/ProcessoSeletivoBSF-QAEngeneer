@@ -1,10 +1,12 @@
 package dtos;
 
 public class LoginDto {
+    private String email;
+    private String password;
 
     private LoginDto(Builder builder) {
-        String email = builder.email;
-        String password = builder.password;
+        this.email = builder.email;
+        this.password = builder.password;
     }
 
     public static Builder builder() {

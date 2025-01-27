@@ -2,7 +2,7 @@ package dtos;
 
 public class ProdutoDto {
     String nome;
-    double preco;
+    int preco;
     String descricao;
     int quantidade;
 
@@ -19,7 +19,7 @@ public class ProdutoDto {
 
     public static class Builder {
         String nome;
-        double preco;
+        int preco;
         String descricao;
         int quantidade;
 
@@ -28,7 +28,7 @@ public class ProdutoDto {
             return this;
         }
 
-        public ProdutoDto.Builder preco(double preco) {
+        public ProdutoDto.Builder preco(int preco) {
             this.preco = preco;
             return this;
         }

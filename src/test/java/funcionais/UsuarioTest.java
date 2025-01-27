@@ -1,7 +1,7 @@
 package funcionais;
 
-import commons.BaseTestBack;
 import dtos.UsuarioDto;
+import commons.BaseTestBack;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import services.UsuarioServices;
@@ -13,6 +13,14 @@ import static org.hamcrest.Matchers.notNullValue;
 
 public class UsuarioTest extends BaseTestBack {
     static UsuarioServices usuarioServices;
+
+    @Test
+    void listarUsuarioSucesso() {
+        usuarioServices = new UsuarioServices(requestSpecification);
+        usuarioServices.listarUsuarios()
+                .statusCode(SC_OK)
+                .body("quantidade", notNullValue());
+    }
 
     @Test
     void cadastrarUsuarioSucesso() {

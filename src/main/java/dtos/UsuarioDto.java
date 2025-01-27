@@ -1,12 +1,16 @@
 package dtos;
 
 public class UsuarioDto {
+    private String nome;
+    private String email;
+    private String password;
+    private String administrador;
 
     private UsuarioDto(UsuarioDto.Builder builder) {
-        String nome = builder.nome;
-        String email = builder.email;
-        String password = builder.password;
-        String administrador = builder.administrador;
+        this.nome = builder.nome;
+        this.email = builder.email;
+        this.password = builder.password;
+        this.administrador = builder.administrador;
     }
 
     public static UsuarioDto.Builder builder() {

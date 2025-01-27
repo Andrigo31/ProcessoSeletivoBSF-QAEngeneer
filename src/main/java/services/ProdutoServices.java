@@ -25,7 +25,7 @@ public class ProdutoServices {
     public ValidatableResponse postProduto(ProdutoDto produtoDto) {
         LoginServices loginServices = new LoginServices(requestSpecification);
 
-        String token = loginServices.login("andrigo@gmail.com", "654321")
+        String token = loginServices.efetuarLogin("andrigo@gmail.com", "654321")
                 .extract()
                 .jsonPath()
                 .get("authorization");
@@ -40,7 +40,7 @@ public class ProdutoServices {
     public ValidatableResponse deleteProduto(String id) {
         LoginServices loginServices = new LoginServices(requestSpecification);
 
-        String token = loginServices.login("andrigo@gmail.com", "654321")
+        String token = loginServices.efetuarLogin("andrigo@gmail.com", "654321")
                 .extract()
                 .jsonPath()
                 .get("authorization");

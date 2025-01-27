@@ -15,6 +15,12 @@ public class UsuarioServices {
         this.requestSpecification = requestSpecification;
     }
 
+    public ValidatableResponse listarUsuarios() {
+        return given().spec(requestSpecification)
+                .get("/usuarios")
+                .then();
+    }
+
     public ValidatableResponse buscarUsuarioPorNome(String nome) {
         return given().spec(requestSpecification)
                 .param("nome", nome)
