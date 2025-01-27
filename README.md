@@ -25,7 +25,7 @@ Gostaria de lembrar, amigavelmente, que mais informações podem ser encontradas
 ---
 
 **-> SOBRE O PRIMEIRO DESAFIO: Etapa I - Fundamentos de Teste**
-Aqui nesta branch (main) há dois arquivos
+- Aqui nesta branch (main) há dois arquivos
 
 1) Aquivo: Etapa I - Fundamentos de Teste_parte01.doc, neste arquivo descrevi:
 - Identificação e Mapeamento dos Cenários de Testes
