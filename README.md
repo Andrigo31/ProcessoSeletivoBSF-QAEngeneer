@@ -23,3 +23,32 @@ Exemplo Response Body:
 ```
 
 **- Resultado Esperado:** O usuário é criado com sucesso e a resposta inclui o código de status 201 e a mensagem de sucesso. 
+
+##Cenário 2: Verificar se o usuário foi criado 
+
+**Objetivo:** Validar a busca do usuário criado pelo nome. 
+
+- Passo 1: Realizar uma requisição GET para buscar o usuário com o nome "AndreaFA". 
+
+Exemplo Request URL: https://serverest.dev/usuarios?nome=AndreaFA 
+
+- Passo 2: Validar se a resposta tem código de status HTTP 200 OK. 
+
+- Passo 3: Validar que a quantidade de usuários retornados não seja nula. 
+
+Exemplo Response Body: 
+```json
+{ 
+  "quantidade": 1, 
+  "usuarios": [ 
+    { 
+      "nome": "AndreaFA", 
+      "email": "andrea@gmail.com", 
+      "password": "123456", 
+      "administrador": "true", 
+      "_id": "TO5RFsQ3TEU6JeNK" 
+    } 
+  ] 
+}
+```
+**- Resultado Esperado:** O usuário "AndreaFA" é encontrado com sucesso e os detalhes da busca são retornados corretamente.
