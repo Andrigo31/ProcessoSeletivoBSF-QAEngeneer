@@ -23,11 +23,12 @@ Processo Seletivo BSF - QA Engineer
 Gostaria de lembrar, amigavelmente, que mais informações podem ser encontradas no arquivo pom.xml, nas branches.
 
 
--> SOBRE O PRIMEIRO DESAFIO: Etapa I - Fundamentos de Teste
-Aqui nesta branch (main) há dois arquivos:
 
-1) Etapa I - Fundamentos de Teste_parte01.doc
-Neste arquivo descrevi:
+
+-> SOBRE O PRIMEIRO DESAFIO: Etapa I - Fundamentos de Teste
+Aqui nesta branch (main) há dois arquivos
+
+1) Aquivo: Etapa I - Fundamentos de Teste_parte01.doc, neste arquivo descrevi:
 - Identificação e Mapeamento dos Cenários de Testes
 - Estratégia de Testes
 - Plano de Teste
@@ -35,7 +36,7 @@ Neste arquivo descrevi:
 - Melhorias Identificadas
 - Parecer sobre a Aplicação.
 
-2) Etapa I - Fundamentos de Teste_parte02.xlsx
+2) Arquivo: Etapa I - Fundamentos de Teste_parte02.xlsx
 Neste arquivo aprofundei os cenários de testes funcionais, trazendo a funcionalidade, a descrição do cenário, o passo-a-passo e o resultado esperado.
 
 
