@@ -81,3 +81,32 @@
 }
 ``` 
 **- Resultado Esperado:** O produto é criado com sucesso e a resposta inclui o código de status 201 e a mensagem de sucesso.
+
+## Cenário 2: Verificar se o produto foi criado
+
+**Objetivo:** Validar a busca do produto criado pelo nome
+
+- Passo 1: Realizar uma requisição GET para buscar o produto com o nome "Lego Classic".
+
+-- Exemplo Request URL: https://serverest.dev/produto?nome=Lego%20Classic
+
+- Passo 2: Validar se a resposta tem código de status HTTP 200 OK.
+  
+- Passo 3: Validar que a quantidade de produtos retornados não seja nula.
+- -- Exemplo Response Body:
+```json
+{ 
+  "quantidade": 1, 
+  "produtos": [ 
+    { 
+      "nome": "Lego Classic", 
+      "descricao": "Lego Classic Caixa De Festa Criativa", 
+      "preco": 519, 
+      "quantidade": 1, 
+      "_id": "TO5RFsQ3TEU6JeNK"
+    } 
+  ] 
+}
+```
+
+**- Resultado Esperado:** O produto "Lego Classic" é encontrado com sucesso e os detalhes são retornados corretamente.
