@@ -1,6 +1,6 @@
 ## Cenário 1: Criar usuário com sucesso 
 
-Objetivo: Criar um novo usuário. 
+**Objetivo:** Criar um novo usuário. 
 - Passo 1: Enviar uma requisição POST para cadastrar um novo usuário com os seguintes dados no seguinte formato: 
 Exemplo Request Body 
 ```json
@@ -22,4 +22,4 @@ Exemplo Response Body:
 }
 ```
 
-- Resultado Esperado: O usuário é criado com sucesso e a resposta inclui o código de status 201 e a mensagem de sucesso. 
+**- Resultado Esperado:** O usuário é criado com sucesso e a resposta inclui o código de status 201 e a mensagem de sucesso. 
