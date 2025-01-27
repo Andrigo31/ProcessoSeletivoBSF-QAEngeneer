@@ -2,7 +2,7 @@
 
 **Objetivo:** Criar um novo usuário. 
 - Passo 1: Enviar uma requisição POST para cadastrar um novo usuário com os seguintes dados no seguinte formato:
-- - Exemplo Request Body 
+-- Exemplo Request Body 
 ```json
 { 
   "nome": "AndreaFA", 
@@ -14,7 +14,7 @@
 
 - Passo 2: Validar se a resposta tem código de status HTTP 201 Created. 
 - Passo 3: Verificar se a mensagem de sucesso é "Cadastro realizado com sucesso".
-- - Exemplo Response Body:
+-- Exemplo Response Body:
 ```json
 { 
   "message": "Cadastro realizado com sucesso", 
