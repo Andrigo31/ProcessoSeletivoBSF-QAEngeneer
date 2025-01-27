@@ -1,3 +1,4 @@
+### ESCOPO USUÁRIO
 ## Cenário 1: Criar usuário com sucesso 
 
 **Objetivo:** Criar um novo usuário. 
@@ -52,3 +53,31 @@
 }
 ```
 **- Resultado Esperado:** O usuário "AndreaFA" é encontrado com sucesso e os detalhes da busca são retornados corretamente.
+
+### ESCOPO PRODUTO
+## Cenário 1: Criar Produto com Sucesso
+
+**Objetivo:** Criar um novo produto.
+
+- Passo 1: Enviar uma requisição POST para cadastrar um novo produto com os seguintes dados no seguinte formato:
+
+-- Exemplo Request Body:
+```json
+{ 
+  "descricao": "Lego Classic Caixa De Festa Criativa", 
+  "nome": "Lego Classic", 
+  "preco": 519, 
+  "quantidade": 1 
+}
+```
+- Passo 2: Validar se a resposta tem código de status HTTP 201 Created.
+  
+- Passo 3 Verificar se a mensagem de sucesso é "Cadastro realizado com sucesso".
+-- Exemplo Response Body:
+```json
+{
+  "message": "Cadastro realizado com sucesso", 
+  "_id": "jogDKFjha92824hg"
+}
+``` 
+**- Resultado Esperado:** O produto é criado com sucesso e a resposta inclui o código de status 201 e a mensagem de sucesso.
