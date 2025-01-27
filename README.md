@@ -8,7 +8,8 @@ Exemplo Request Body
   "email": "andrigo@gmail.com", 
   "password": "654321", 
   "administrador": "true" 
-} 
+}
+
 
 - Passo 2: Validar se a resposta tem código de status HTTP 201 Created. 
 - Passo 3: Verificar se a mensagem de sucesso é "Cadastro realizado com sucesso". 
