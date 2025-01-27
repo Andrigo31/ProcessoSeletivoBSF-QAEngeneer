@@ -20,10 +20,10 @@ Descreva e automatize o seguinte fluxo:
 **Objetivo:**  
 Validar a funcionalidade de busca de destino e exibição de resultados do site Trivago.  
 
-### Pontos chave:
-- **Pesquisa pelo destino:** Manaus  
-- **Ordenação do resultado por:** Avaliações e Sugestões  
-- **Verificação das informações recebidas no primeiro resultado:**  
+**Pontos chave:**
+- Pesquisa pelo destino: Manaus  
+- Ordenação do resultado por: Avaliações e Sugestões  
+- Verificação das informações recebidas no primeiro resultado:  
   - Nome do hotel  
   - Valor  
   - Avaliação  
