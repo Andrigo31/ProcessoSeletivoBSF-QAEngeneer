@@ -15,7 +15,7 @@ Descreva e automatize o seguinte fluxo:
 6. Verifique o valor
 
 
-## DESCRIÇÃO DO FLUXO
+## Descrição do Fluxo
 
 **Objetivo:**  
 Validar a funcionalidade de busca de destino e exibição de resultados do site Trivago.  
