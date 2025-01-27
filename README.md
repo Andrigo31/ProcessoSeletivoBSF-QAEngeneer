@@ -1,4 +1,4 @@
-##Processo Seletivo BSF - QA Engineer##
+##Processo Seletivo BSF - QA Engineer
 
 **-> SOBRE O PROJETO:**
 **1) Organização do Projeto:**
@@ -22,8 +22,7 @@
 
 Gostaria de lembrar, amigavelmente, que mais informações podem ser encontradas no arquivo pom.xml, nas branches.
 
-
-
+---
 
 **-> SOBRE O PRIMEIRO DESAFIO: Etapa I - Fundamentos de Teste**
 Aqui nesta branch (main) há dois arquivos
