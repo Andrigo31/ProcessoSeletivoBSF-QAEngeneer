@@ -1,4 +1,4 @@
-2) Etapa III - Automação de Teste Web II
+#**2) Etapa III - Automação de Teste Web II**
 Nesta terceira etapa, queremos aprofundar nosso entendimento e compreender como seria sua construção em métodos de validação. 
 
 Aplicação alvo: trivago.com.br 
@@ -12,15 +12,15 @@ Descreva e automatize o seguinte fluxo:
 6 - Verifique o valor;
 
 
-DESCRIÇÃO DO FLUXO:
+**DESCRIÇÃO DO FLUXO:**
 Objetivo: Validar a funcionalidade de busca de destino e exibição de resultados do site Trivago. Pontos chave:
   - Pesquisa pelo destino: Manaus
   - Ordenação do resultado por: Avaliações e Sugestões
   - Verificação das informações recebidas no primeiro resultado: nome do hotel, valor e avaliação.
 
-Passo-a-passo do Fluxo:
+**Passo-a-passo do Fluxo:**
 1. Acessar o site:
-                    - Iniciar o navegador, limpar os cookies e carregar a url http://www.trivago.com.br.
+- Iniciar o navegador, limpar os cookies e carregar a url http://www.trivago.com.br.
   - O retorno esperado é a exibição da página inicial.
 
 2. Pesquisar pelo destino "Manaus":
