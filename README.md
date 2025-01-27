@@ -20,7 +20,7 @@ Objetivo: Validar a funcionalidade de busca de destino e exibição de resultado
 
 Passo-a-passo do Fluxo:
 1. Acessar o site:
-  - Iniciar o navegador, limpar os cookies e carregar a url http://www.trivago.com.br.
+                    - Iniciar o navegador, limpar os cookies e carregar a url http://www.trivago.com.br.
   - O retorno esperado é a exibição da página inicial.
 
 2. Pesquisar pelo destino "Manaus":
