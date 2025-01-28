@@ -17,7 +17,7 @@ Descreva e automatize os seguintes cenários:
 - Passo 4: Clicar no botão para realizar a busca.
 - Passo 5: Aguardar a resposta da página, que deve exibir o endereço correspondente ao CEP informado.
 - Passo 6: Validar se o endereço retornado é "Rua Miranda Leão".
-**- Resultado Esperado:** O sistema deve retornar um endereço válido para o CEP "69005-040".
+**- Resultado Esperado:** O sistema deve retornar o endereço "Rua Miranda Leão".
 
   
 **Cenário 1: Buscar endereço com o valor “Lojas Bemol”**
@@ -27,7 +27,7 @@ Descreva e automatize os seguintes cenários:
 - Passo 4: Clicar no botão para realizar a busca.
 - Passo 5: Aguardar a resposta da página, que deve exibir um endereço relacionado ao nome "Lojas Bemol".
 - Passo 6: Validar se o endereço retornado é "Rua Miranda Leão, 41 Lojas Bemol".
-**- Resultado Esperado:** O sistema deve retornar um endereço válido para o valor "Lojas Bemol".
+**- Resultado Esperado:** O sistema deve retornar o endereço "Rua Miranda Leão, 41 Lojas Bemol".
 
 ---
 ### 2) Etapa III - Automação de Teste Web II
