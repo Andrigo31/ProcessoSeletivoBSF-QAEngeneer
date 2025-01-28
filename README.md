@@ -59,7 +59,7 @@
 
 **Objetivo:** Criar um novo produto.
 
-- Passo 1: Logar usuário para obter o token de autenticação. Para logar envie uma requisição POST, com o email e a senha do usuário. O token é retornado no campo authorization.
+- Passo 1: Logar usuário para obter o token de autenticação. Para logar envie uma requisição POST, com o email e a senha do usuário, utilizaremos email: andrigo@gmail.com e senha: 654321. O token é retornado no campo authorization.
 
 -- Exemplo Request Body:
 ```json
@@ -76,7 +76,7 @@
 }
 ```
 
-- Passo 2: Enviar uma requisição POST, com o token do usuário, para cadastrar um novo produto com os seguintes dados no seguinte formato. 
+- Passo 2: Enviar uma requisição POST, com o token do usuário (campo authorization) no  header, para cadastrar um novo produto com os seguintes dados no seguinte formato. 
 
 -- Exemplo Request Body:
 ```json
