@@ -45,7 +45,7 @@ Descreva e automatize o seguinte fluxo:
 4. Verifique o primeiro nome da lista
 5. Verifique a avaliação
 6. Verifique o valor
-
+---
 
 **DESCRIÇÃO DO FLUXO**
 
