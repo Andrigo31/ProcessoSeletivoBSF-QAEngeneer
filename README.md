@@ -1,4 +1,4 @@
-**1) Etapa II - Automação de Teste Web I **
+### 1) Etapa II - Automação de Teste Web I
 Nesta segunda etapa, queremos iniciar nosso entendimento sobre seu domínio de automação de testes Web.
 
 ### Aplicação alvo: buscacep.correios.com.br
@@ -17,14 +17,16 @@ Cenário 1: Testar a funcionalidade de busca de um CEP específico, "69005-040".
 - Passo 4: Clicar no botão para realizar a busca.
 - Passo 5: Aguardar a resposta da página, que deve exibir o endereço correspondente ao CEP informado.
 - Passo 6: Validar se o endereço retornado é Rua Miranda Leão.
-- Resultado Esperado: O sistema deve retornar um endereço válido para o CEP "69005-040" e exibir as informações relacionadas no formato esperado (logradouro, bairro, cidade, etc.).
+**- Resultado Esperado:** O sistema deve retornar um endereço válido para o CEP "69005-040" e exibir as informações relacionadas no formato esperado (logradouro, bairro, cidade, etc.).
 
 
 
 
 
 
-**2) Etapa III - Automação de Teste Web II**
+
+
+### 2) Etapa III - Automação de Teste Web II
 Nesta terceira etapa, queremos aprofundar nosso entendimento e compreender como seria sua construção em métodos de validação. 
 
 ### Aplicação alvo: [trivago.com.br](https://www.trivago.com.br)
