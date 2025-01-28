@@ -10,7 +10,7 @@ Descreva e automatize os seguintes cenários:
 
 **DESCRIÇÃO DOS CENÁRIOS**
 
-**Cenário 1: Buscar endereço com um CEP "69005-040".**
+**Cenário 1: Buscar endereço com o CEP "69005-040".**
 - Passo 1: Acessar a página inicial do site https://buscacep.correios.com.br.
 - Passo 2: Localizar o campo de entrada de CEP ou endereço.
 - Passo 3: Inserir o valor "69005-040" no campo de CEP ou endereço.
@@ -20,7 +20,7 @@ Descreva e automatize os seguintes cenários:
 #### - Resultado Esperado: O sistema deve retornar o endereço "Rua Miranda Leão".
 
   
-**Cenário 1: Buscar endereço com o valor “Lojas Bemol”**
+**Cenário 2: Buscar endereço com o valor “Lojas Bemol”**
 - Passo 1: Acessar a página inicial do site https://buscacep.correios.com.br.
 - Passo 2: Localizar o campo de entrada de CEP ou endereço.
 - Passo 3: Inserir o nome "Lojas Bemol" no campo de CEP ou endereço.
