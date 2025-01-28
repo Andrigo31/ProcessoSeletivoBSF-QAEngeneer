@@ -12,13 +12,19 @@ public class CorreiosPage {
     public CorreiosPage(WebDriver driver){
         this.driver = driver;
     }
-    public CorreiosPage acessaPagina(){
+    public CorreiosPage acessarPagina(){
         driver.get("http://www.buscacep.correios.com.br");
         driver.manage().deleteAllCookies();
         return this;
     }
-    public CorreiosPage pesquisa(){
+    public CorreiosPage pesquisarPorCEP(){
         driver.findElement(endereco).sendKeys("69005-040");
+        driver.findElement(pesquisar).click();
+        return this;
+    }
+
+    public CorreiosPage pesquisarPorEndereco(){
+        driver.findElement(endereco).sendKeys("Lojas Bemol");
         driver.findElement(pesquisar).click();
         return this;
     }

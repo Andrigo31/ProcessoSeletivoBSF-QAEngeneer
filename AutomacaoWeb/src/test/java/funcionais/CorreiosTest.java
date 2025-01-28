@@ -29,28 +29,51 @@ public class CorreiosTest {
     }
 
     @Test
-    void consultarCepComSucesso() throws IOException {
+    void consultarCepSucesso() throws IOException {
 
-        new CorreiosPage(driver).acessaPagina()
-         .pesquisa();
-
-        WebElement captchaImage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("captcha_image")));
-        String captchaImageUrl = captchaImage.getAttribute("src");
-
-        CaptchaSolver solver = new CaptchaSolver();
-        String captchaSolution = solver.getCaptchaSolution(captchaImageUrl);
+        new CorreiosPage(driver).acessarPagina()
+                .pesquisarPorCEP();
+        String captchaSolution = resolverCaptcha();
 
         if (captchaSolution != null) {
-            WebElement captchaInput = driver.findElement(By.id("captcha"));
-            captchaInput.sendKeys(captchaSolution);
-
-            WebElement submitButton = driver.findElement(By.id("btn_pesquisar"));
-            submitButton.click();
-
+            preencherCaptcha(captchaSolution);
             WebElement resultado = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"resultado-DNEC\"]/tbody/tr/td[1]")));
             Assertions.assertEquals("Rua Miranda Leão", resultado.getText());
         } else {
             Assertions.fail("Não foi possível resolver o CAPTCHA.");
         }
     }
+
+    @Test
+    void consultarEnderecoSucesso() throws IOException {
+        new CorreiosPage(driver).acessarPagina()
+                .pesquisarPorEndereco();
+        String captchaSolution = resolverCaptcha();
+
+        if (captchaSolution != null) {
+            preencherCaptcha(captchaSolution);
+            WebElement resultado = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"resultado-DNEC\"]/tbody/tr/td[1]")));
+            Assertions.assertEquals("Rua Miranda Leão, 41\n" +
+                    "Lojas Bemol", resultado.getText());
+        } else {
+            Assertions.fail("Não foi possível resolver o CAPTCHA.");
+        }
+    }
+
+    public String resolverCaptcha() throws IOException {
+        WebElement captchaImage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("captcha_image")));
+        String captchaImageUrl = captchaImage.getAttribute("src");
+
+        CaptchaSolver solver = new CaptchaSolver();
+        return solver.getCaptchaSolution(captchaImageUrl);
+    }
+
+    public void preencherCaptcha(String captchaSolution) {
+        WebElement captchaInput = driver.findElement(By.id("captcha"));
+        captchaInput.sendKeys(captchaSolution);
+
+        WebElement submitButton = driver.findElement(By.id("btn_pesquisar"));
+        submitButton.click();
+    }
+
 }
