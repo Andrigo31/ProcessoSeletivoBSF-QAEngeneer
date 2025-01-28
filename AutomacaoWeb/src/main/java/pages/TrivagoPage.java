@@ -23,9 +23,9 @@ public class TrivagoPage extends BasePage  {
     public static final By itemAvaliacaoESugestoes = By.xpath("//*[text()='Avaliação e sugestões']");
     public static final By botaoConfirmar = By.xpath("//*[text()='Confirmar']");
     public static final By hotelPrimeiroResultado = By.xpath("//*[@id=\"__next\"]/div[1]/main/div[3]/section/div/div/ol/li[1]/div/article/div[2]/div[1]/section/h2/button/span");
-    public static final By avaliacaoPrimeiroResultado = By.xpath("//*[@id=\"__next\"]/div[1]/main/div[3]/section/div/div/ol/li[1]/div/article/div[2]/div[1]/button[3]/span/span/span[1]");
+    public static final By avaliacaoPrimeiroResultado = By.xpath("//*[@id=\"__next\"]/main/section/div[2]/div/div/ol/li[1]/div/article/div[2]/section/div[2]/button[1]/span/span/span[1]");
     public static final By valorPrimeiroResultado = By.xpath("//*[@id='__next']/div[1]/main/div[3]/section[2]/div/div/ol/li[1]/div/article/div[2]/div[2]/div/div/div[1]");
-    public static final By cookie = By.xpath("//*[text()='OK']");
+
 
     public TrivagoPage(WebDriver driver) {
         super(driver);
