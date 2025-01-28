@@ -8,22 +8,26 @@ Descreva e automatize os seguintes cenários:
 1 - Realizar a busca com o valor “69005-040”; 
 2 - Realizar a busca com o valor “Lojas Bemol”; 
 
-### DESCRIÇÃO DOS CENÁRIOS
+**DESCRIÇÃO DOS CENÁRIOS**
 
-Cenário 1: Testar a funcionalidade de busca de um CEP específico, "69005-040".
-- Passo 1: Acessar a página inicial do site dos Correios.
-- Passo 2: Localizar o campo de entrada de CEP.
-- Passo 3: Inserir o valor "69005-040" no campo de CEP.
+**Cenário 1: Buscar endereço com um CEP "69005-040".**
+- Passo 1: Acessar a página inicial do site https://buscacep.correios.com.br.
+- Passo 2: Localizar o campo de entrada de CEP ou endereço.
+- Passo 3: Inserir o valor "69005-040" no campo de CEP ou endereço.
 - Passo 4: Clicar no botão para realizar a busca.
 - Passo 5: Aguardar a resposta da página, que deve exibir o endereço correspondente ao CEP informado.
-- Passo 6: Validar se o endereço retornado é Rua Miranda Leão.
-**- Resultado Esperado:** O sistema deve retornar um endereço válido para o CEP "69005-040" e exibir as informações relacionadas no formato esperado (logradouro, bairro, cidade, etc.).
+- Passo 6: Validar se o endereço retornado é "Rua Miranda Leão".
+**- Resultado Esperado:** O sistema deve retornar um endereço válido para o CEP "69005-040".
 
-
-
-
-
-
+  
+**Cenário 1: Buscar endereço com o valor “Lojas Bemol”**
+- Passo 1: Acessar a página inicial do site https://buscacep.correios.com.br.
+- Passo 2: Localizar o campo de entrada de CEP ou endereço.
+- Passo 3: Inserir o nome "Lojas Bemol" no campo de CEP ou endereço.
+- Passo 4: Clicar no botão para realizar a busca.
+- Passo 5: Aguardar a resposta da página, que deve exibir um endereço relacionado ao nome "Lojas Bemol".
+- Passo 6: Validar se o endereço retornado é "Rua Miranda Leão, 41 Lojas Bemol".
+**- Resultado Esperado:** O sistema deve retornar um endereço válido para o valor "Lojas Bemol".
 
 
 ### 2) Etapa III - Automação de Teste Web II
@@ -41,7 +45,7 @@ Descreva e automatize o seguinte fluxo:
 6. Verifique o valor
 
 
-### DESCRIÇÃO DO FLUXO
+**DESCRIÇÃO DO FLUXO**
 
 **Objetivo:**  
 Validar a funcionalidade de busca de destino e exibição de resultados do site Trivago.  
