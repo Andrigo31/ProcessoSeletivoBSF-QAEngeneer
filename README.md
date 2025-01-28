@@ -2,7 +2,7 @@
 ## Cenário 1: Criar usuário com sucesso 
 
 **Objetivo:** Criar um novo usuário. 
-- Passo 1: Enviar uma requisição POST para cadastrar um novo usuário com os seguintes dados no seguinte formato:
+- Passo 1: Enviar uma requisição POST para cadastrar um novo usuário com os seguintes dados no seguinte formato.
 -- Exemplo Request Body 
 ```json
 { 
@@ -27,7 +27,7 @@
 
 ## Cenário 2: Verificar se o usuário foi criado 
 
-**Objetivo:** Validar a busca do usuário criado pelo nome. 
+**Objetivo:** Validar a busca, pelo nome, do usuário criado. 
 
 - Passo 1: Realizar uma requisição GET para buscar o usuário com o nome "AndreaFA". 
 
@@ -59,7 +59,24 @@
 
 **Objetivo:** Criar um novo produto.
 
-- Passo 1: Enviar uma requisição POST para cadastrar um novo produto com os seguintes dados no seguinte formato:
+- Passo 1: Logar usuário para obter o token de autenticação. Para logar envie uma requisição POST, com o email e a senha do usuário. O token é retornado no campo authorization.
+
+-- Exemplo Request Body:
+```json
+{
+  "email": "andrigo@gmail.com",
+  "password": "654321"
+}
+```
+-- Exemplo Response Body:
+```json
+{
+  "message": "Login realizado com sucesso",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZHJpZ29AZ21haWwuY29tIiwicGFzc3dvcmQiOiI2NTQzMjEiLCJpYXQiOjE3MzgwMjI1NTAsImV4cCI6MTczODAyMzE1MH0.vOqj490Wvb0MLRt9BYIy_lcxwMFEMaBZWyuGOzMiySc"
+}
+```
+
+- Passo 2: Enviar uma requisição POST, com o token do usuário, para cadastrar um novo produto com os seguintes dados no seguinte formato. 
 
 -- Exemplo Request Body:
 ```json
@@ -70,9 +87,9 @@
   "quantidade": 1 
 }
 ```
-- Passo 2: Validar se a resposta tem código de status HTTP 201 Created.
+- Passo 3: Validar se a resposta tem código de status HTTP 201 Created.
   
-- Passo 3 Verificar se a mensagem de sucesso é "Cadastro realizado com sucesso".
+- Passo 4: Verificar se a mensagem de sucesso é "Cadastro realizado com sucesso".
 -- Exemplo Response Body:
 ```json
 {
@@ -84,7 +101,7 @@
 
 ## Cenário 2: Verificar se o produto foi criado
 
-**Objetivo:** Validar a busca do produto criado pelo nome
+**Objetivo:** Validar a busca, pelo nome, do produto criado.
 
 - Passo 1: Realizar uma requisição GET para buscar o produto com o nome "Lego Classic".
 
