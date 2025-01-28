@@ -9,8 +9,7 @@ import services.ProdutoServices;
 
 import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.apache.http.HttpStatus.SC_OK;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.notNullValue;
+import static org.hamcrest.Matchers.*;
 
 public class ProdutoTest extends BaseTestBack {
     static ProdutoServices produtoServices;
@@ -21,7 +20,7 @@ public class ProdutoTest extends BaseTestBack {
     }
 
     @Test
-    void cadastrarProdutoSucesso() {
+    void validarCadastroProdutoSucesso() {
         produtoServices = new ProdutoServices(requestSpecification);
 
         ProdutoDto produtoDto = ProdutoDto.builder()
@@ -35,14 +34,10 @@ public class ProdutoTest extends BaseTestBack {
                 .statusCode(SC_CREATED)
                 .body("message", is("Cadastro realizado com sucesso"));
 
-    }
-
-    @Test
-    void buscarProdutoPorNomeSucesso() {
-        produtoServices = new ProdutoServices(requestSpecification);
         produtoServices.buscarProdutoPorNome("Lego Classic")
                 .statusCode(SC_OK)
-                .body("quantidade", notNullValue());
+                .body("quantidade", allOf(notNullValue(), greaterThan(0)));
+
     }
 
     @AfterAll

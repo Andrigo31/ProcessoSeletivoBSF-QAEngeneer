@@ -8,8 +8,8 @@ import services.UsuarioServices;
 
 import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.apache.http.HttpStatus.SC_OK;
-import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.notNullValue;
+import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.greaterThan;
 
 public class UsuarioTest extends BaseTestBack {
     static UsuarioServices usuarioServices;
@@ -23,7 +23,7 @@ public class UsuarioTest extends BaseTestBack {
     }
 
     @Test
-    void cadastrarUsuarioSucesso() {
+    void validarCadastroUsuarioSucesso() {
         usuarioServices = new UsuarioServices(requestSpecification);
 
         UsuarioDto usuarioDto = UsuarioDto.builder()
@@ -36,14 +36,10 @@ public class UsuarioTest extends BaseTestBack {
         usuarioServices.postUsuario(usuarioDto)
                 .statusCode(SC_CREATED)
                 .body("message", is("Cadastro realizado com sucesso"));
-    }
 
-    @Test
-    void buscarUsuarioPorNomeSucesso() {
-        usuarioServices = new UsuarioServices(requestSpecification);
         usuarioServices.buscarUsuarioPorNome("AndreaFA")
                 .statusCode(SC_OK)
-                .body("quantidade", notNullValue());
+                .body("quantidade", allOf(notNullValue(), greaterThan(0)));
     }
 
     @AfterAll
