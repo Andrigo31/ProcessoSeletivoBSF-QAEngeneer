@@ -5,8 +5,8 @@ Nesta segunda etapa, queremos iniciar nosso entendimento sobre seu domínio de a
 
 Descreva e automatize os seguintes cenários:
 
-1 - Realizar a busca com o valor “69005-040”; 
-2 - Realizar a busca com o valor “Lojas Bemol”; 
+1. Realizar a busca com o valor “69005-040”;
+2. Realizar a busca com o valor “Lojas Bemol”; 
 
 **DESCRIÇÃO DOS CENÁRIOS**
 
@@ -82,8 +82,6 @@ Validar a funcionalidade de busca de destino e exibição de resultados do site 
 
 6. **Verificar o valor do primeiro hotel da lista:**  
    - A automação deverá capturar o valor do primeiro hotel da lista e validar se é **"R$78"**.  
-
----
 
 ### Resultado esperado:
 - O sistema deve executar cada etapa sem erros, apresentando as informações corretas de acordo com os critérios definidos.  
