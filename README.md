@@ -8,7 +8,7 @@ Descreva e automatize os seguintes cenários:
 2. Verificar se o usuário foi criado
 3. Criação de um produto
 4. Verificar se o produto foi criado
-
+---
 
 ### ESCOPO USUÁRIO
 ## Cenário 1: Criar usuário com sucesso 
