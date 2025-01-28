@@ -35,7 +35,7 @@
 
 - Passo 2: Validar se a resposta tem código de status HTTP 200 OK. 
 
-- Passo 3: Validar que a quantidade de usuários retornados não seja nula. 
+- Passo 3: Validar que a quantidade de usuários retornados não seja nula e nem igual a zero. 
 
 -- Exemplo Response Body: 
 ```json
@@ -109,7 +109,7 @@
 
 - Passo 2: Validar se a resposta tem código de status HTTP 200 OK.
   
-- Passo 3: Validar que a quantidade de produtos retornados não seja nula.
+- Passo 3: Validar que a quantidade de produtos retornados não seja nula e nem igual a zero.
 - -- Exemplo Response Body:
 ```json
 { 
