@@ -29,7 +29,7 @@ Descreva e automatize os seguintes cenários:
 - Passo 6: Validar se o endereço retornado é "Rua Miranda Leão, 41 Lojas Bemol".
 **- Resultado Esperado:** O sistema deve retornar um endereço válido para o valor "Lojas Bemol".
 
-
+---
 ### 2) Etapa III - Automação de Teste Web II
 Nesta terceira etapa, queremos aprofundar nosso entendimento e compreender como seria sua construção em métodos de validação. 
 
