@@ -1,3 +1,15 @@
+### Etapa IV - Automação de Teste de API 
+Nesta última etapa, queremos mapear o seu domínio de técnicas de testes em API. 
+
+**Aplicação alvo: serverest.dev**
+
+Descreva e automatize os seguintes cenários: 
+1. Criação de um usuário
+2. Verificar se o usuário foi criado
+3. Criação de um produto
+4. Verificar se o produto foi criado
+
+
 ### ESCOPO USUÁRIO
 ## Cenário 1: Criar usuário com sucesso 
 
